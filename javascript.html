@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorial JavaScript</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="wrap">
+        <div class="header">
+            <h1>Pengertian JavaScript</h1>
+            <p>Pelajari dasar-dasar JavaScript</p>
+        </div>
+
+        <!-- Menu Section -->
+        <div class="menu">
+            <ul>
+                <li><a href="html.html">Home</a></li>
+                <li><a href="html link.html">HTML</a></li>
+                <li><a href="css.html">CSS</a></li>
+                <li><a href="php.html">PHP</a></li>
+                <li><a href="javascript.html">Javascript</a></li>
+            </ul>
+        </div>
+
+        <!-- Main Body Section -->
+        <div class="badan">
+            <!-- Sidebar -->
+            <div class="sidebar">
+                <h3>JavaScript Dasar</h3>
+            </div>
+
+            <!-- Content -->
+            <div class="content">
+                <h3>Apa itu JavaScript?</h3>
+                <p>JavaScript adalah bahasa pemrograman yang digunakan untuk membuat halaman web menjadi interaktif. JavaScript memungkinkan pengembang untuk menambah fungsionalitas pada halaman web, seperti menangani event pengguna, memanipulasi elemen DOM (Document Object Model), serta berinteraksi dengan server melalui AJAX.</p>
+
+                <h4>Struktur Dasar JavaScript</h4>
+                <p>JavaScript sering ditulis di dalam tag <strong>&lt;script&gt;</strong> dalam halaman HTML. Berikut adalah contoh dasar penggunaan JavaScript:</p>
+                <pre>
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Halaman JavaScript Pertama&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Selamat datang di JavaScript&lt;/h1&gt;
+
+    &lt;script&gt;
+      alert("Halo, ini adalah pesan dari JavaScript!");
+    &lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+                </pre>
+                <p>Pada contoh di atas, <strong>alert()</strong> adalah fungsi JavaScript yang digunakan untuk menampilkan pesan pop-up pada layar.</p>
+
+                <h4>Penjelasan tentang Elemen JavaScript</h4>
+                <p>Beberapa elemen dasar dalam JavaScript yang perlu Anda ketahui adalah:</p>
+                <ul>
+                    <li><strong>Variables</strong>: Variabel digunakan untuk menyimpan data. Dalam JavaScript, kita dapat menggunakan <code>let</code>, <code>const</code>, atau <code>var</code> untuk mendeklarasikan variabel.</li>
+                    <pre>
+let nama = "John";
+const umur = 30;
+                    </pre>
+                    <li><strong>Functions</strong>: Fungsi adalah blok kode yang dapat dipanggil untuk melakukan tugas tertentu. Berikut adalah contoh mendeklarasikan fungsi dalam JavaScript:</li>
+                    <pre>
+function halo() {
+  alert("Selamat datang di JavaScript!");
+}
+halo(); // Memanggil fungsi halo
+                    </pre>
+                    <li><strong>Events</strong>: JavaScript memungkinkan kita untuk menangani berbagai event, seperti klik tombol atau perubahan input pengguna. Misalnya, kita bisa menggunakan event <code>onclick</code> untuk menangani klik tombol.</li>
+                    <pre>
+<button onclick="alert('Tombol diklik!')">Klik Saya</button>
+                    </pre>
+                    <li><strong>DOM Manipulation</strong>: JavaScript memungkinkan kita untuk memanipulasi elemen-elemen HTML menggunakan DOM. Berikut adalah contoh untuk mengubah teks dalam elemen dengan ID tertentu:</li>
+                    <pre>
+document.getElementById("demo").innerHTML = "Teks telah diubah!";
+                    </pre>
+                </ul>
+
+                <h4>Contoh Penggunaan JavaScript</h4>
+                <p>Berikut adalah contoh penggunaan JavaScript untuk menampilkan teks ketika tombol diklik:</p>
+                <pre>
+&lt;button onclick="tampilkanPesan()"&gt;Klik untuk Pesan&lt;/button&gt;
+&lt;p id="pesan"&gt;&lt;/p&gt;
+
+&lt;script&gt;
+  function tampilkanPesan() {
+    document.getElementById("pesan").innerHTML = "Tombol telah diklik!";
+  }
+&lt;/script&gt;
+                </pre>
+                <p>Pada contoh di atas, ketika pengguna mengklik tombol, JavaScript akan mengubah isi elemen dengan ID <code>pesan</code> menjadi "Tombol telah diklik!".</p>
+
+                <h4>JavaScript dan AJAX</h4>
+                <p>JavaScript juga dapat digunakan untuk melakukan komunikasi asinkron dengan server tanpa memuat ulang halaman web menggunakan AJAX (Asynchronous JavaScript and XML). Berikut adalah contoh sederhana penggunaan AJAX:</p>
+                <pre>
+&lt;script&gt;
+  function ambilData() {
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+      if (this.readyState == 4 && this.status == 200) {
+        document.getElementById("data").innerHTML = this.responseText;
+      }
+    };
+    xhttp.open("GET", "data.txt", true);
+    xhttp.send();
+  }
+&lt;/script&gt;
+
+&lt;button onclick="ambilData()"&gt;Ambil Data&lt;/button&gt;
+&lt;p id="data"&gt;&lt;/p&gt;
+                </pre>
+                <p>Dalam contoh ini, saat tombol diklik, JavaScript menggunakan AJAX untuk mengambil data dari file "data.txt" dan menampilkannya pada elemen dengan ID <code>data</code>.</p>
+            </div>
+
+            <div class="clear"></div>
+
+            <!-- Footer -->
+            <div class="footer">
+                <p>Footer Content: Copyright &copy; 2024 Malas Ngoding</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

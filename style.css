@@ -1,0 +1,157 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.wrap {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Header Styles */
+.header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+.header p {
+    font-size: 1.2em;
+}
+
+/* Menu Styles */
+.menu {
+    background-color: #333;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.menu ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+.menu ul li a:hover {
+    color: #4CAF50;
+}
+
+/* Main Content Area Styles */
+.badan {
+    display: flex;
+    margin-top: 20px;
+}
+
+.sidebar {
+    width: 25%;
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-right: 2px solid #ddd;
+}
+
+.sidebar h3 {
+    margin-top: 0;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+    color: #333;
+    text-decoration: none;
+}
+
+.sidebar ul li a:hover {
+    color: #4CAF50;
+}
+
+.content {
+    width: 70%;
+    padding: 20px;
+    background-color: white;
+}
+
+.content h3 {
+    font-size: 2em;
+    color: #4CAF50;
+}
+
+.content h4 {
+    font-size: 1.5em;
+    color: #333;
+}
+
+.content ul {
+    margin-left: 20px;
+    list-style-type: disc;
+}
+
+.content ul li {
+    margin-bottom: 10px;
+}
+
+.content pre {
+    background-color: #f1f1f1;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1.1em;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+/* Clearfix for the content */
+.clear {
+    clear: both;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .badan {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .content {
+        width: 100%;
+    }
+}

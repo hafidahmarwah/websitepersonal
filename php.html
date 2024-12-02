@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorial PHP</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="wrap">
+        <div class="header">
+            <h1>Pengertian PHP</h1>
+            <p>Pelajari dasar-dasar PHP (Hypertext Preprocessor)</p>
+        </div>
+
+        <!-- Menu Section -->
+        <div class="menu">
+            <ul>
+                <li><a href="html.html">Home</a></li>
+                <li><a href="html link.html">HTML</a></li>
+                <li><a href="css.html">CSS</a></li>
+                <li><a href="php.html">PHP</a></li>
+                <li><a href="javascript.html">Javascript</a></li>
+            </ul>
+        </div>
+
+        <!-- Main Body Section -->
+        <div class="badan">
+            <!-- Sidebar -->
+            <div class="sidebar">
+                <h3>PHP Dasar</h3>
+            </div>
+
+            <!-- Content -->
+            <div class="content">
+                <h3>Apa itu PHP?</h3>
+                <p>PHP (Hypertext Preprocessor) adalah bahasa pemrograman server-side yang digunakan untuk mengembangkan aplikasi web dinamis. PHP sering digunakan untuk membuat halaman web interaktif dan dapat berfungsi dengan berbagai database seperti MySQL.</p>
+
+                <h4>Struktur Dasar PHP</h4>
+                <p>PHP biasanya disisipkan ke dalam HTML dengan menggunakan tag khusus. Berikut adalah contoh struktur dasar PHP dalam halaman HTML:</p>
+                <pre>
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Halaman PHP Pertama&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;?php
+      echo "Selamat datang di halaman PHP pertama saya!";
+    ?&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+                </pre>
+                <p>Pada contoh di atas, kode PHP dimulai dengan <strong>&lt;?php</strong> dan diakhiri dengan <strong>?&gt;</strong>, dan fungsi <strong>echo</strong> digunakan untuk menampilkan teks di halaman web.</p>
+
+                <h4>Penjelasan tentang Elemen PHP</h4>
+                <p>PHP digunakan untuk membuat halaman web dinamis dengan cara memproses data di server dan menghasilkan konten HTML yang ditampilkan di browser. Berikut adalah beberapa elemen penting dalam PHP:</p>
+                <ul>
+                    <li><strong>&lt;?php ... ?&gt;</strong>: Tag pembuka dan penutup PHP di dalam dokumen HTML.</li>
+                    <li><strong>echo</strong>: Digunakan untuk menampilkan data atau teks ke halaman web.</li>
+                    <li><strong>variables</strong>: Variabel dalam PHP dimulai dengan tanda dolar (<code>$</code>) diikuti dengan nama variabel. Contoh: <code>$nama = "John";</code></li>
+                    <li><strong>functions</strong>: PHP mendukung banyak fungsi built-in. Misalnya, fungsi <strong>strlen()</strong> digunakan untuk menghitung panjang string.</li>
+                </ul>
+
+                <h4>Contoh Penggunaan PHP</h4>
+                <p>Berikut adalah contoh penggunaan PHP untuk memproses data formulir dan menampilkan pesan berdasarkan input pengguna:</p>
+                <pre>
+&lt;form method="post" action="php_example.php"&gt;
+  Nama: &lt;input type="text" name="nama"&gt;
+  &lt;input type="submit"&gt;
+&lt;/form&gt;
+
+&lt;?php
+  if ($_SERVER["REQUEST_METHOD"] == "POST") {
+      $nama = $_POST['nama'];
+      echo "Halo, " . $nama;
+  }
+?&gt;
+                </pre>
+                <p>Contoh di atas menunjukkan cara menggunakan formulir HTML untuk mengirim data ke server menggunakan metode POST, kemudian memproses dan menampilkan input pengguna menggunakan PHP.</p>
+
+                <h4>PHP dengan MySQL</h4>
+                <p>PHP sering digunakan bersama dengan MySQL untuk membuat aplikasi web yang melibatkan penyimpanan dan pengambilan data dari database. Berikut adalah contoh sederhana untuk menghubungkan PHP dengan database MySQL:</p>
+                <pre>
+&lt;?php
+  $conn = new mysqli("localhost", "username", "password", "database");
+  if ($conn->connect_error) {
+      die("Koneksi gagal: " . $conn->connect_error);
+  }
+  echo "Koneksi berhasil!";
+?&gt;
+                </pre>
+                <p>Di sini, PHP digunakan untuk membuat koneksi ke database MySQL dan memverifikasi apakah koneksi berhasil.</p>
+            </div>
+
+            <div class="clear"></div>
+
+            <!-- Footer -->
+            <div class="footer">
+                <p>Footer Content: Copyright &copy; 2024 Malas Ngoding</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

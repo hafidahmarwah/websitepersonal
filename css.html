@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorial CSS</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="wrap">
+        <div class="header">
+            <h1>Pengertian CSS</h1>
+            <p>Pelajari dasar-dasar CSS (Cascading Style Sheets)</p>
+        </div>
+
+        <!-- Menu Section -->
+        <div class="menu">
+            <ul>
+                <li><a href="html.html">Home</a></li>
+                <li><a href="html link.html">HTML</a></li>
+                <li><a href="css.html">CSS</a></li>
+                <li><a href="php.html">PHP</a></li>
+                <li><a href="javascript.html">Javascript</a></li>
+            </ul>
+        </div>
+
+        <!-- Main Body Section -->
+        <div class="badan">
+            <!-- Sidebar -->
+            <div class="sidebar">
+                <h3>CSS Dasar</h3>
+            </div>
+
+            <!-- Content -->
+            <div class="content">
+                <h3>Apa itu CSS?</h3>
+                <p>CSS (Cascading Style Sheets) adalah bahasa yang digunakan untuk mendesain atau memberikan gaya pada halaman web. CSS memungkinkan Anda untuk mengatur warna, layout, font, jarak, dan banyak elemen desain lainnya.</p>
+
+                <h4>Struktur Dasar CSS</h4>
+                <p>CSS digunakan dengan menuliskan aturan (rule) yang terdiri dari selector, properti, dan nilai. Berikut adalah contoh aturan CSS:</p>
+                <pre>
+selector {
+    property: value;
+}
+                </pre>
+                <p>Contoh aturan CSS yang mengubah warna teks menjadi biru:</p>
+                <pre>
+h1 {
+    color: blue;
+}
+                </pre>
+                <p>Pada contoh di atas, <strong>h1</strong> adalah selector yang merujuk pada elemen &lt;h1&gt;, dan <strong>color: blue</strong> adalah properti yang memberi nilai warna biru pada teks dalam elemen tersebut.</p>
+
+                <h4>Penjelasan tentang Elemen CSS</h4>
+                <p>CSS terdiri dari beberapa elemen penting yang digunakan untuk mendesain halaman web, di antaranya:</p>
+                <ul>
+                    <li><strong>Selector</strong>: Menentukan elemen HTML mana yang akan diberi gaya.</li>
+                    <li><strong>Property</strong>: Menentukan gaya atau fitur yang ingin diterapkan pada elemen yang dipilih.</li>
+                    <li><strong>Value</strong>: Nilai yang diterapkan pada properti untuk menentukan tampilannya.</li>
+                </ul>
+
+                <h4>Contoh Penggunaan CSS</h4>
+                <p>Berikut adalah contoh penggunaan CSS di dalam dokumen HTML. CSS dapat disertakan di dalam dokumen HTML dengan tiga cara:</p>
+                <ul>
+                    <li><strong>Inline CSS</strong>: Menyisipkan CSS langsung di dalam elemen HTML menggunakan atribut <code>style</code>.</li>
+                    <pre>
+&lt;p style="color: red;"&gt;Teks ini berwarna merah&lt;/p&gt;
+                    </pre>
+                    <li><strong>Internal CSS</strong>: Menambahkan kode CSS di dalam tag <code>&lt;style&gt;</code> di bagian <code>&lt;head&gt;</code> dokumen HTML.</li>
+                    <pre>
+&lt;head&gt;
+    &lt;style&gt;
+        p {
+            color: green;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+                    </pre>
+                    <li><strong>External CSS</strong>: Menyimpan kode CSS dalam file terpisah yang kemudian dipanggil melalui tag <code>&lt;link&gt;</code>.</li>
+                    <pre>
+&lt;link rel="stylesheet" href="style.css"&gt;
+                    </pre>
+                </ul>
+            </div>
+
+            <div class="clear"></div>
+
+            <!-- Footer -->
+            <div class="footer">
+                <p>Footer Content: Copyright &copy; 2024 Malas Ngoding</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
